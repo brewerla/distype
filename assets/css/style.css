@@ -1,0 +1,45 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.tlcontainer {
+    width: 85%;
+    margin: 0 auto;
+}
+
+#main-workspace {
+    border: 1px solid black;
+
+    margin-top: 40px;
+
+    display: grid;
+    grid-template-columns: 1.5fr 6fr 1.5fr;
+}
+
+#main-workspace .section {
+    height: 500px;
+
+    overflow: scroll;
+    overflow-x: hidden;
+
+    border: 1px solid red; 
+}
+
+.section::-webkit-scrollbar {
+    display: none;
+}
+
+.list-section {
+    padding: 5px;
+}
+.list-section .heading {
+    text-align: center;
+}
+
+.list-section .item {
+    padding: 20px;
+    border: 1px solid green;
+    margin-bottom: 3px;
+}
